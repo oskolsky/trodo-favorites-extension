@@ -7,7 +7,7 @@ type FavoriteItemProps = {
 
 export const FavoriteItem = ({ item, onRemove }: FavoriteItemProps) => {
     return (
-        <div className="flex w-full gap-x-5 border-t border-gray-300 py-5 first:border-t-0">
+        <div className="flex w-full gap-x-5 border-t border-gray-300 py-5 first:border-t-0 first:pt-0">
             <a
                 href={`${item.url}?utm_source=favorites_extension`}
                 target="_blank"

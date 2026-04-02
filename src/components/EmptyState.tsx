@@ -1,5 +1,5 @@
 export const EmptyState = () => (
-    <div className="flex flex-col items-center justify-center px-5 py-12 text-center text-gray-500">
+    <div className="flex flex-col items-center justify-center px-5 pt-7 pb-12 text-center text-gray-500">
         <div className="mb-4">
             <a href="https://trodo.com?utm_source=favorites_extension" target="_blank" rel="noopener noreferrer">
                 <img src="/icons/128.png" alt="Trodo" className="size-12" />

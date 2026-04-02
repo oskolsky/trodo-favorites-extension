@@ -74,10 +74,10 @@ export default function App() {
             {loading ? (
                 <Loader />
             ) : (
-                <>
-                    {isProductPage && <AddFavoriteButton onClick={handleAdd} />}
+                <div>
+                    {isProductPage ? <AddFavoriteButton onClick={handleAdd} /> : <div className="h-5" />}
                     <FavoritesList items={items} onRemove={handleRemove} />
-                </>
+                </div>
             )}
         </div>
     )

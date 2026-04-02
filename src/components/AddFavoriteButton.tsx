@@ -5,7 +5,7 @@ type AddFavoriteButtonProps = {
 
 export const AddFavoriteButton = ({ isDisabled, onClick }: AddFavoriteButtonProps) => {
     return (
-        <div className="px-5 pt-5">
+        <div className="p-5">
             <button
                 onClick={onClick}
                 disabled={isDisabled}
