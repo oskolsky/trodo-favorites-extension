@@ -2,6 +2,8 @@
 
 A simple Chrome Extension that allows you to save and manage favorite products from Trodo.
 
+[![Main Screenshot](./public/screenshots/main.png)](./public/screenshots/main.png)
+
 ## ✨ Features
 
 - Save products directly from Trodo pages
