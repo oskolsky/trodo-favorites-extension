@@ -36,7 +36,6 @@ The extension may request the following permissions:
 
 - **storage** — to store favorite products locally
 - **activeTab** — to access the current Trodo page
-- **scripting** — to extract product data from the page
 - **host permissions (trodo.com)** — to read product information from Trodo pages
 
 These permissions are used only for the core functionality of the extension.

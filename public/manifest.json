@@ -3,7 +3,7 @@
   "name": "Trodo Favorites",
   "version": "1.0.0",
   "description": "Save Trodo products to favorites",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab"],
   "host_permissions": ["https://www.trodo.com/*"],
   "content_scripts": [
     {
