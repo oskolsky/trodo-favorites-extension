@@ -6,7 +6,12 @@ export const Header = ({ count }: HeaderProps) => {
     return (
         <div className="sticky top-0 z-20 bg-white px-5">
             <div className="flex items-center justify-between py-5">
-                <a href="https://trodo.com" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://trodo.com?utm_source=favorites_extension
+                "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <img src="/images/trodo-logo.svg" alt="Trodo" className="h-6 object-contain" />
                 </a>
 

@@ -7,15 +7,20 @@ type FavoriteItemProps = {
 
 export const FavoriteItem = ({ item, onRemove }: FavoriteItemProps) => {
     return (
-        <div className="flex w-full gap-x-5 border-t border-gray-300 py-5 first:border-t-0 first:pt-0">
-            <a href={item.url} target="_blank" rel="noreferrer" className="shrink-0">
+        <div className="flex w-full gap-x-5 border-t border-gray-300 py-5 first:border-t-0">
+            <a
+                href={`${item.url}?utm_source=favorites_extension`}
+                target="_blank"
+                rel="noreferrer"
+                className="shrink-0"
+            >
                 <img src={item.imageUrl} alt={item.name} className="size-15" />
             </a>
 
             <div className="flex flex-1 flex-col justify-between">
                 <div>
                     <a
-                        href={item.url}
+                        href={`${item.url}?utm_source=favorites_extension`}
                         target="_blank"
                         rel="noreferrer"
                         className="line-clamp-1 text-sm font-medium hover:text-blue-600"

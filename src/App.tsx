@@ -75,7 +75,7 @@ export default function App() {
                 <Loader />
             ) : (
                 <>
-                    <AddFavoriteButton onClick={handleAdd} isDisabled={!isProductPage} />
+                    {isProductPage && <AddFavoriteButton onClick={handleAdd} />}
                     <FavoritesList items={items} onRemove={handleRemove} />
                 </>
             )}
