@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { Loader } from './components/Loader'
 import { FavoriteItemType } from './types'
 import { addFavorite, getFavorites, removeFavorite } from './utils/storage'
+import { getProductFromPage } from './utils/utils'
 
 export default function App() {
     const [items, setItems] = useState<FavoriteItemType[]>([])
@@ -13,26 +14,6 @@ export default function App() {
 
     const [isProductPage, setIsProductPage] = useState(false)
     const [currentProduct, setCurrentProduct] = useState<FavoriteItemType | null>(null)
-
-    const getProductFromPage = async () => {
-        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
-
-        if (!tab?.id || !tab.url) return null
-
-        if (!tab.url.includes('trodo.com')) {
-            return null
-        }
-
-        try {
-            const response = await chrome.tabs.sendMessage(tab.id, {
-                type: 'GET_PRODUCT',
-            })
-
-            return response
-        } catch (e) {
-            return null
-        }
-    }
 
     useEffect(() => {
         const init = async () => {
